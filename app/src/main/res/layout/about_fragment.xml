@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/gradient_1"
+        />
+
+
+
+
+<com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/me"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:elevation="8dp"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="3dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="8"
+        app:civ_shadow_color="#5E35B1"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:id="@+id/card"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satyajit Pradhan"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/cav"
+            android:layout_gravity="center"
+            />
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Android App Developer"
+    android:layout_marginTop="10dp"
+    android:textColor="#95888F"
+    android:alpha="0.52"
+    android:fontFamily="@font/cav"
+    android:layout_gravity="center"
+    />
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+
+            >
+
+            <android.support.design.widget.TabItem
+                android:icon="@drawable/ic_public_black_24dp"
+                android:id="@+id/webi"
+                style="@style/pro"
+                android:text="WEB"/>
+
+            <android.support.design.widget.TabItem
+                android:text="STORE"
+                android:id="@+id/store"
+                style="@style/pro"
+                android:icon="@drawable/ic_shop_black_24dp"/>
+
+            <android.support.design.widget.TabItem
+                android:text="CALL"
+                android:id="@+id/call"
+                android:autoLink="phone"
+                style="@style/pro"
+                android:icon="@drawable/ic_call_black_24dp"/>
+
+
+        </android.support.design.widget.TabLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/texxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:padding="15dp"
+        android:text="Please don\'t forget to click some ads that will buy me a coffee!!"/>
+
+
+    <TextView
+        android:id="@+id/texxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texxt"
+        android:padding="0dp"
+        android:background="@drawable/selector_btn"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:textColor="#AB47BC"
+        android:text="SIGN OUT"/>
+
+
+    <TextView
+        android:id="@+id/vdoAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texxt"
+        android:padding="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:background="@drawable/selector_btn"
+        android:textColor="#26C6DA"
+        android:text="WATCH AN AD"/>
+
+
+<LinearLayout
+    android:layout_below="@id/texxt2"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:padding="8dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:elevation="18dp"
+        app:cardElevation="5dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="9dp"
+        >
+
+        <ImageView
+            android:src="@drawable/grad_new_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_android_black_24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="Android"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/white"
+            />
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:elevation="18dp"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="9dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        >
+
+        <ImageView
+            android:src="@drawable/grad_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings_white_24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="PHP"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/white"
+            />
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:elevation="18dp"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="9dp"
+        >
+
+        <ImageView
+            android:src="@drawable/grad_new_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_filter_drama_black_24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="FIREBASE"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/white"
+            />
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

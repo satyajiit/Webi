@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_url"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:id="@+id/fixed"
+        android:visibility="gone"
+        android:background="@drawable/chip"
+        android:text="@string/last_links_text"
+        android:fontFamily="@font/cav"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/simpleSwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fixed"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/links"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/waiter"
+        />
+
+    <TextView
+        android:id="@+id/emt_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:clickable="true"
+        android:background="@drawable/selector_btn"
+        android:layout_marginBottom="90dp"
+        android:fontFamily="@font/halogen"
+        android:text="NO CREATED LINKS YET...\nCLICK TO REFRESH"
+        />
+
+
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:id="@+id/placeSnackBar">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_gravity="end|bottom|center"
+        app:elevation="14dp"
+        android:layout_margin="16dp" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+</RelativeLayout>

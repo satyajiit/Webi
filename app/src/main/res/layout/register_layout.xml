@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_layout"
+    android:background="#303030">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/halogen"
+        android:textColor="#fff"
+        android:text="Webi"
+        android:textSize="46sp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:fontFamily="@font/halogen"
+        android:textColor="#fff"
+        android:text="Shorten the Internet"
+        android:textSize="20sp" />
+
+
+
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textColor="#ffff"
+        android:fontFamily="@font/cav"
+        android:background="#55000000"
+        android:textColorHint="#ffff"/>
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="197dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffff"
+        android:fontFamily="@font/cav"
+        android:background="#55000000"
+        android:textColorHint="#ffff"/>
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:textColor="#ffff"
+        android:fontFamily="@font/cav"
+        android:inputType="text"
+        android:layout_marginBottom="142dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:hint="Password"
+        android:background="#55000000"
+        android:textColorHint="#ffff"/>
+
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:paddingTop="15dp"
+        android:fontFamily="@font/cav"
+        android:paddingBottom="15dp"
+        android:onClick="validateRegistration"
+        android:background="@drawable/gradient_1"
+        android:layout_marginBottom="80dp"
+        android:text="Register" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/cav"
+        android:onClick="startLoginActivity"
+        android:text="Already have ID? Login here"
+        android:textColor="#fff"/>
+
+
+</RelativeLayout>

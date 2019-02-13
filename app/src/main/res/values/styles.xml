@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+        <style name="pro" parent="ThemeOverlay.AppCompat.Light">
+            <item name="android:fontFamily">@font/cav</item>
+        </style>
+
+    <style name="AppTheme.Spinner" parent="@style/AppTheme">
+        <item name="colorControlActivated">@color/webiDarkGray</item>
+        <item name="colorControlHighlight">@color/webiDarkGray</item>
+        <item name="colorControlNormal">@color/webiDarkGray</item>
+    </style>
+    <style name="AppTheme.Spinner.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_marginLeft">15.0dip</item>
+    </style>
+
+    <style name="AppTheme.Button.Text" parent="@style/AppTheme.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="AppTheme.Button" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

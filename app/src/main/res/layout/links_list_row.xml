@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+
+    >
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/cav"
+        android:textSize="10sp"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/webiDarkGray"
+        android:text="JAN 12 2019"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:fontFamily="@font/cav"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/date" />
+
+    <TextView
+        android:id="@+id/appLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:fontFamily="@font/cav"
+        android:layout_marginBottom="2dp"
+        android:text="Webi.desi/Test"/>
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appLink"
+        android:fontFamily="@font/cav"
+        android:text="https://somelongu...."/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/appLink"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="57dp"
+        android:layout_toStartOf="@+id/count"
+        android:src="@drawable/clicks" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appLink"
+        android:fontFamily="@font/cav"
+        android:textColor="@color/webiDarkGray"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:text="121" />
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

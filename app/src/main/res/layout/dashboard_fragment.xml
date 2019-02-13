@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dash"
+    android:background="#fff"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text77"
+        android:fontFamily="@font/cav"
+        android:text="Stats of all Links"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:background="@drawable/chip"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/count"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="4dp"
+        android:focusable="true"
+        android:layout_margin="3dp"
+        android:layout_width="180dp"
+        android:layout_height="95dp"
+        android:layout_below="@id/text77"
+        >
+
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginBottom="-13dp"
+            android:layout_marginLeft="-13dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_poll_clicks"
+
+            />
+
+        <TextView
+            android:id="@+id/clicks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/halogen"
+            android:textSize="45sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="18dp"
+            android:layout_gravity="center"
+            android:text="0"
+            />
+
+
+        <TextView
+            android:id="@+id/frty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="7dp"
+            android:text="CLICKS"
+            android:fontFamily="@font/cav"
+            />
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/crd2"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="3dp"
+        android:layout_width="180dp"
+        android:clickable="true"
+        android:layout_toRightOf="@id/count"
+        android:layout_height="95dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/text77"
+        >
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginBottom="-13dp"
+            android:layout_marginLeft="-13dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_links"
+
+            />
+
+        <TextView
+            android:id="@+id/links"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/halogen"
+            android:textSize="45sp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="18dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="0"
+            />
+
+
+        <TextView
+            android:id="@+id/frty2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="7dp"
+            android:textColor="@color/colorAccent"
+            android:text="WEBI'S"
+            android:fontFamily="@font/cav"
+            />
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_below="@id/crd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:fontFamily="@font/cav"
+        android:layout_marginTop="2dp"
+        android:text="All Created Links"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:background="@drawable/chip"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyler"
+        android:layout_marginTop="3dp"
+        android:scrollbars="vertical"
+        android:layout_below="@id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/empty"
+        />
+
+    <TextView
+        android:id="@+id/emt_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:layout_marginBottom="90dp"
+        android:fontFamily="@font/halogen"
+        android:text="NO CREATED LINKS YET..."
+        />
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:id="@+id/placeSnackBar"></android.support.design.widget.CoordinatorLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
+
+

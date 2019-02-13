@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    >
+<ImageView
+    android:id="@+id/img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/earth"
+    android:layout_marginTop="95dp"
+    android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        android:text="WEBI"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img"
+        android:textColor="#FBC02D"
+        android:fontFamily="@font/halogen"
+        android:textSize="46sp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="125dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#F9FBE7"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt"
+        />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cav"
+        android:textColor="#F9FBE7"
+        android:text="Shorten The Internet"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+
+    <Button
+        android:id="@+id/loginn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_alignParentBottom="true"
+        android:text="  Log In"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/cav"
+        android:onClick="startLoginActivity"
+        android:textColor="@color/white"
+        android:paddingRight="30dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/circular_login"
+        android:background="@drawable/rect_btn"
+
+/>
+
+
+    <Button
+        android:layout_toRightOf="@id/loginn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="  Sign Up"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/cav"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:paddingRight="30dp"
+        android:gravity="center"
+        android:onClick="startRegisterActivity"
+        android:drawableLeft="@drawable/circular_register"
+        android:background="@drawable/rect_btn2"
+        android:layout_marginBottom="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+<TextView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="shwPolicy"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/white"
+    android:layout_above="@id/w1"
+    android:fontFamily="@font/cav"
+    android:textSize="9sp"
+    android:text="BY USING WEBI YOU ACCEPT TO ALL ITS PRIVACY POLICIES"
+    />
+
+    <TextView
+        android:id="@+id/w1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+       android:layout_alignParentBottom="true"
+        android:fontFamily="@font/cav"
+        android:textSize="8sp"
+        android:onClick="shwPolicy"
+        android:text="@string/click"/>
+
+</RelativeLayout>

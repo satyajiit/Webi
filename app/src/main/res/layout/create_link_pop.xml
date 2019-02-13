@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:paddingLeft="30.0dip"
+    android:paddingTop="15.0dip"
+    android:paddingRight="22.0dip"
+    android:id="@+id/pop_layout"
+    android:paddingBottom="10.0dip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <ScrollView android:layout_width="264dp"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical"
+            android:id="@+id/shorten_inputs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp"
+                android:textColor="@color/webiBlack"
+                android:id="@+id/shorten_suggest"
+                android:layout_width="168.0dip"
+                android:fontFamily="@font/cav"
+                android:layout_height="wrap_content"
+                android:text="@string/shorten_suggest" />
+            <Spinner  android:textSize="16.0sp"
+                android:theme="@style/AppTheme.Spinner"
+                android:id="@+id/shorten_domain"
+                android:layout_width="fill_parent"
+                android:fontFamily="@font/cav"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.0dip"
+                android:dropDownWidth="fill_parent"
+                style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+
+
+                <EditText
+                    android:id="@+id/url_name"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="60.0dip"
+                    android:textSize="16sp"
+                    android:inputType="textWebEditText"
+                    android:layout_marginRight="12.0dip"
+                    android:fontFamily="@font/cav"
+                    android:hint="Webi.Desi/Your Link name"
+                    />
+
+            <EditText android:textSize="16.0sp"
+                android:textColor="@color/webiBlack"
+                android:textColorHint="@color/webiDarkGray"
+                android:id="@+id/link_url"
+                android:fontFamily="@font/cav"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:layout_marginRight="12.0dip"
+                android:hint="@string/shorten_hint" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_weight="0.0">
+        <Button android:id="@+id/shorten_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn"
+            style="@style/AppTheme.Button.Text"
+            android:theme="@style/pro"
+            android:text="@string/shorten_button_cancel"
+            />
+        <Button android:id="@+id/shorten_button_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn"
+            style="@style/AppTheme.Button.Text"
+            android:text="@string/shorten_button_create"
+            android:theme="@style/pro" />
+    </LinearLayout>
+</LinearLayout>
