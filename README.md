@@ -1,4 +1,5 @@
 # WEBI - THE URL SHORTENER
+<img src="/Screen/play.svg" height="64" width="128" />
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-YES-blueviolet.svg)](#)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
