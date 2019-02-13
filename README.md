@@ -1,6 +1,6 @@
 # WEBI - THE URL SHORTENER
 
-[![Maintenance](https://img.shields.io/badge/MAINTAINED%3F-YES-green.svg)](#)&nbsp;
+[![Maintenance](https://img.shields.io/badge/MAINTAINED%3F-YES-green.svg)](#)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 [![Generic badge](https://img.shields.io/badge/COMPLETED-YES-<COLOR>.svg)](#)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
