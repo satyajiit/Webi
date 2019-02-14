@@ -29,9 +29,16 @@
 <img src="/Screen/8.png" height="583" width="350" />&nbsp;
 <img src="/Screen/9.png" height="583" width="350" />&nbsp;
 
-## Note :
+## Features & Note :
 
-* FireStore has been used in this project.
-* PHP API.
-* A basic PHP Script that process the REQUEST is added in the Repo.
-* Do ask me for any doubts/installation
+* Uses Firebase 🔥
+* GPLv3 License ✌
+* Good UI 💖
+* Multiple Domain Support 👌 
+* FireStore has been used in this project. 😇
+* PHP API. 🌀
+* A basic PHP Script that process the REQUEST is added in the Repo. 🎀
+* Do ask me for any doubts/installation 🙂
+
+### Lots of Hardwork has been made on this project
+[![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://satyajiit.xyz)
