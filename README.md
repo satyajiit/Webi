@@ -1,5 +1,5 @@
 # WEBI - THE URL SHORTENER
-[![playstore](/Screen/playstore.png)](https://play.google.com/store/apps/details?id=com.satyajit.webi)
+[![playstore](/Screen/playstore.png)](https://play.google.com/store/apps/details?id=com.satyajit.gamex)
 
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-YES-blueviolet.svg)](#)
@@ -31,13 +31,9 @@
 
 ## Features & Note :
 
-* Uses Firebase 🔥
+*  Explore Yourself 🔥
 * GPLv3 License ✌
 * Good UI 💖
-* Multiple Domain Support 👌 
-* FireStore has been used in this project. 😇
-* PHP API. 🌀
-* A basic PHP Script that process the REQUEST is added in the Repo. 🎀
 * Do ask me for any doubts/installation 🙂
 
 ### Lots of Hardwork has been made on this project
